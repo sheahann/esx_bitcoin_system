@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+    <div id="main">
+        <header>
+            <img src="images/bitcointxt.png">
+        </header>
+
+        <div id="menu-item">
+            <div id="menu-detail">
+                <p>100.0$</p>
+            </div>
+            <div id="receive">
+                <p>Receive 0.01</p>
+            </div>
+            <button id="purchase" class="green 100Buy">Purchase</button>
+            <button id="sell" class="orange 100Sell">Sell bitcoins</button>
+        </div>
+
+        <div id="menu-item">
+            <div id="menu-detail">
+                <p>500.0$</p>
+            </div>
+            <div id="receive">
+                <p>Receive 0.05</p>
+            </div>
+            <button id="purchase" class="green 500Buy">Purchase</button>
+            <button id="sell" class="orange 500Sell">Sell bitcoins</button>
+        </div>
+
+        <div id="menu-item">
+            <div id="menu-detail">
+                <p>1,000.0$</p>
+            </div>
+            <div id="receive">
+                <p>Receive 0.1</p>
+            </div>
+            <button id="purchase" class="green 1000Buy">Purchase</button>
+            <button id="sell" class="orange 1000Sell">Sell bitcoins</button>
+        </div>
+
+        <div id="menu-item">
+            <div id="menu-detail">
+                <p>2,000.0$</p>
+            </div>
+            <div id="receive">
+                <p>Receive 0.2</p>
+            </div>
+            <button id="purchase" class="green 2000Buy">Purchase</button>
+            <button id="sell" class="orange 2000Sell">Sell bitcoins</button>
+        </div>
+
+        <div id="menu-item">
+            <div id="menu-detail">
+                <p>Custom</p>
+            </div>
+            <input class="custom-input" type="number" value="0" placeholder="Enter a number">
+            <button id="purchase" class="green customBuy">Purchase</button>
+            <button id="sell" class="orange customSell">Sell bitcoins</button>
+        </div>
+
+        <label class="check-area">
+            <input id="check" type="checkbox">
+            <span class="checkmark"></span>
+            <p>Enable description</p>
+          </label>
+
+        <div id="status">
+            <p>Bitcoin status: <span></span></p>
+        </div>
+
+        <div id="status_id">
+            <p>Account ID: <span></span></p>
+        </div>
+    </div>
+
+    <div id="test">
+        <div id="descrip" class="descrip-get">
+            <div class="arrow"></div>
+            <p>How much you will pay</p>
+        </div>
+
+        <div id="descrip" class="descrip-pay">
+            <div class="arrow"></div>
+            <p>How many coins you will get</p>
+        </div>
+
+        <div id="descrip" class="descrip-custom">
+            <div class="arrow"></div>
+            <p>Put your custom value</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

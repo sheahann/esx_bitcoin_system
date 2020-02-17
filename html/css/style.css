@@ -1,0 +1,476 @@
+@font-face {
+    src: url(../font/bitcoin.ttf);
+    font-family: bitcoin;
+}
+
+@keyframes descrip1 {
+    from {
+        top: 100px;
+    }
+    to {
+        top: 255px;
+    }
+}
+
+@keyframes descrip2 {
+    from {
+        top: 100px;
+    }
+    to {
+        top: 445px;
+    }
+}
+
+@keyframes descrip3 {
+    from {
+        top: 100px;
+    }
+    to {
+        top: 630px;
+    }
+}
+
+
+/*
+
+    Main style
+
+*/
+
+#main {
+    display: none;
+    position: absolute;
+    top: 170px;
+    left: 470px;
+    height: 600px;
+    width: 800px;
+    border-radius: 3px;
+    padding: 15px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .65);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .65);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .65);
+    background-image: linear-gradient(to bottom, rgb(120, 126, 138), rgb(114, 120, 131));
+}
+
+#main header {
+    height: 100px;
+}
+
+#main header img {
+    margin-top: -200px;
+    margin-left: 120px;
+}
+
+
+/*
+
+    Button style
+
+*/
+
+button {
+    position: absolute;
+    border: 0px solid transparent;
+    outline: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    padding: 1.5px 5px;
+    font-weight: bold;
+    box-shadow: 3px 3px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: 2px 2px;
+}
+
+.red {
+    background-color: rgb(148, 40, 40);
+    color: rgb(224, 124, 124);
+}
+
+.green {
+    background-color: rgb(62, 126, 33);
+    color: rgb(134, 214, 96);
+}
+
+.blue {
+    background-color: rgb(33, 66, 126);
+    color: rgb(96, 157, 214)
+}
+
+.orange {
+    background-color: rgb(211, 153, 30);
+    color: rgb(255, 218, 137)
+}
+
+.none {
+    background-color: rgb(119, 119, 119);
+    color: rgb(189, 189, 189)
+}
+
+
+/*
+
+    Input style
+
+*/
+
+input[type="number"] {
+    position: absolute;
+    height: 30px;
+    width: 140px;
+    padding: 5px;
+    outline: none;
+    color: rgb(170, 170, 170);
+    text-align: center;
+    transition: 0.3s;
+    font-family: 'Ubuntu', sans-serif;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    border-left: 5px solid rgb(33, 207, 250);
+    background-image: linear-gradient(to bottom, rgb(120, 126, 138), rgb(114, 120, 131));
+}
+
+input[type="number"]::placeholder {
+    transition: 0.3s;
+    color: transparent;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+input[type="number"]:hover::placeholder {
+    color: rgb(195, 195, 195);
+}
+
+input[type="number"]:focus {
+    background-color: rgb(77, 77, 77);
+    color: rgb(221, 221, 221);
+    -moz-box-shadow: inset 0 0 15px #aaa;
+    -webkit-box-shadow: inset 0 0 15px #aaa;
+    box-shadow: inset 0 0 15px #aaa;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+
+/*input[type="number"] {
+    position: absolute;
+    height: 30px;
+    width: 140px;
+    padding: 5px;
+    border-radius: 4px;
+    outline: none;
+    color: rgb(170, 170, 170);
+    text-align: center;
+    transition: 0.3s;
+    font-family: 'Ubuntu', sans-serif;
+    border: 0px solid transparent;
+    background-color: rgb(50, 50, 50);
+}
+
+input[type="number"]::placeholder {
+    transition: 0.3s;
+    color: transparent;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+input[type="number"]:hover::placeholder {
+    color: rgb(124, 124, 124);
+}
+
+input[type="number"]:focus {
+    background-color: rgb(77, 77, 77);
+    color: rgb(170, 170, 170);
+    -moz-box-shadow: inset 0 0 15px #000000;
+    -webkit-box-shadow: inset 0 0 15px #000000;
+    box-shadow: inset 0 0 15px #000000;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}*/
+
+
+/*
+
+    Menu items style
+
+*/
+
+#menu-item {
+    width: 100%;
+    height: 70px;
+    position: static;
+    margin-top: 23px;
+    border-radius: 5px;
+    background-color: rgb(86, 90, 98);
+}
+
+#menu-item h2 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+#menu-item #purchase {
+    margin-left: 600px;
+    margin-top: 20px;
+}
+
+#menu-item #sell {
+    margin-left: 700px;
+    margin-top: 20px;
+}
+
+#menu-detail {
+    height: 30px;
+    width: 110px;
+    padding: 5px;
+    color: white;
+    margin-top: 15px;
+    margin-left: 15px;
+    position: absolute;
+    border-radius: 5px;
+    border-left: 5px solid rgb(33, 207, 250);
+    background-image: linear-gradient(to bottom, rgb(120, 126, 138), rgb(114, 120, 131));
+}
+
+#menu-detail p {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+}
+
+#receive {
+    height: 30px;
+    width: 140px;
+    padding: 5px;
+    color: white;
+    margin-top: 15px;
+    margin-left: 330px;
+    position: absolute;
+    border-radius: 5px;
+    border-left: 5px solid rgb(33, 207, 250);
+    background-image: linear-gradient(to bottom, rgb(120, 126, 138), rgb(114, 120, 131));
+}
+
+#receive p {
+    /*font-family: 'Ubuntu', sans-serif;*/
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+
+.custom-input {
+    margin-top: 15px;
+    margin-left: 330px;
+}
+
+.check-area {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(185, 185, 185);
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.check-area input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    transition: 0.3s;
+    border-radius: 3px;
+    position: absolute;
+    margin-top: 15px;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+}
+
+.check-area:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.check-area input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check-area input:checked~.checkmark:after {
+    display: block;
+}
+
+.check-area .checkmark:after {
+    left: 3.5px;
+    top: 3.5px;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.check-area p {
+    position: absolute;
+    margin-top: 14px;
+    margin-left: -10px;
+}
+
+
+/*
+
+    Description style
+
+*/
+
+#test {
+    display: none;
+    text-align: center;
+}
+
+#descrip {
+    position: absolute;
+    width: 300px;
+    height: 55px;
+    border-radius: 200px 200px 200px 0px;
+    -moz-border-radius: 200px 200px 200px 0px;
+    -webkit-border-radius: 200px 200px 200px 0px;
+    background-color: rgb(50, 50, 50);
+}
+
+#descrip p {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.descrip-get {
+    animation: descrip1 1s;
+    top: 255px;
+    left: 500px;
+    border-left: 6px ridge aqua;
+}
+
+.descrip-pay {
+    animation: descrip2 1s;
+    top: 445px;
+    left: 815px;
+    border-left: 6px ridge tomato;
+}
+
+.descrip-custom {
+    animation: descrip3 1s;
+    top: 630px;
+    left: 815px;
+    border-left: 6px ridge rgb(81, 211, 81);
+}
+
+.descrip-status {
+    animation: descrip3 1s;
+    top: 805px;
+    left: 815px;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    border-left: 6px ridge rgb(81, 211, 81);
+}
+
+#descrip .arrow {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    margin-top: 13px;
+    margin-left: 5px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 0px 10px 0px 10px;
+    transform: rotate(90deg);
+    background-size: 40px 30px;
+    -ms-transform: rotate(90deg);
+    background-image: url(../images/arrow.png);
+}
+
+
+/*
+
+    Coins status style
+
+*/
+
+#status {
+    position: absolute;
+    height: 25px;
+    width: 190px;
+    padding: 5px;
+    color: white;
+    margin-left: 308px;
+    text-align: center;
+    border-radius: 5px;
+    border-left: 5px solid rgb(153, 76, 241);
+    background-image: linear-gradient(to bottom, rgb(61, 65, 71), rgb(55, 59, 65));
+}
+
+#status p {
+    color: white;
+    margin-top: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#status span {
+    color: rgb(74, 228, 74);
+}
+
+
+/*
+
+    Id style
+
+*/
+
+#status_id {
+    position: absolute;
+    height: 25px;
+    width: 190px;
+    padding: 5px;
+    color: white;
+    margin-left: 595px;
+    text-align: center;
+    border-radius: 5px;
+    border-left: 5px solid rgb(153, 76, 241);
+    background-image: linear-gradient(to bottom, rgb(61, 65, 71), rgb(55, 59, 65));
+}
+
+#status_id p {
+    color: white;
+    margin-top: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#status_id span {
+    color: rgb(74, 228, 74);
+}
